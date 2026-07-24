@@ -1,9 +1,27 @@
 aid: brandct
 name: BrandCT
-description: 'BrandCT is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'BrandCT (品牌CT) is an offline-retail market-monitoring service operated by Mashangying
+  (马上赢市场调查 / yikuaigao), a Chinese retail-data company. It has built a national offline-retail
+  monitoring network based on POS data from a panel of sample stores, and delivers brand owners a
+  "BrandCT" service that scans more than 10 million products across offline retail formats to quantify
+  market share, distribution (铺市率), and product sell-through. The platform supports quantitative
+  analysis of product innovation, channel competition, and category trends to speed up and sharpen
+  client decision-making. The product is delivered through a login-gated web dashboard (WeChat, phone,
+  and email verification sign-in); no public developer API, OpenAPI specification, or /.well-known
+  discovery surface was found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/brandct/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.dev.yikuaigao.com/qrpay-website/latest/images/website-home-h5.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Enterprise
+- Retail
+- Market Research
+- Retail Analytics
+- Point of Sale
+- Consumer Packaged Goods
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/brandct-domain-security.yml
 - type: Website
-  url: https://brandct.cn/
+  url: https://brandct.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
